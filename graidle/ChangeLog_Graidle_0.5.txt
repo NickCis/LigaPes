@@ -1,0 +1,22 @@
+ChangeLog graidle 0.5:
+
+ * Code Optimization;
+
+ * Introduction of Legend position on Top and Bottom
+
+ * new function setFontMono() - support of Monospace Fonts
+
+ * new function setFontSmallSize($size)
+
+ * new function setFontBigSize($size)
+
+ * new function setFontLegSize($size)
+
+ * new function setLegMaxLen($len)
+
+ * new function setFontLegend($fontleg,$size=8)
+
+ * modified function setFont($font,$size=8)
+
+ * modified function setFontBD($fontbd,$size=8)
+

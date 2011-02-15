@@ -1,0 +1,78 @@
+=================LigaPes by Nickcis =========================
+Estado Alpha/Beta. Demo de la app: http://apps.facebook.com/ligapes/
+LICENCIADO BAJO LA GPL V3. http://www.gnu.org/licenses/gpl-3.0.html
+Excepto:
+    memcached-1.4.4/* Memcached, para mayor info de autor y licencia: http://memcached.org/
+   js/jquery-1.4.2.min.js, js/jquery-ui-1.8.custom.min.js, development-bundle/* son archivos de jquery ( http://jquery.com/ ) licenciados bajo GPL y MIT. Entrar a su pagina para mas informacion.
+   facebox/* son archivos de facebox, para mayor informacion acerca de su licencia entre a su sitio: http://famspam.com/facebox/
+   graidle/* Projecto aparte Licenciado bajo la gpl, para mayor informacion acerca de autor y licencia: http://graidle.sourceforge.net/
+   icons/* famfamfam icons, para mayor informacion acerca autor y licencia: http://famfamfam.com/
+   facebook-platform/* plataforma de facebook (php) para mayor informacion acerca autor y licencia: http://facebook.com
+
+El resto fue codeado por NickCis, y es distribuido bajo la Gpl v3.
+   
+
+=========== Descripcion =============
+La estructura de la aplicacion se penso, para que se puedan modificar rapida y facilmente cosas como el idioma, estilo o frases, sin la nececidad de meterse en el codigo. Esta pensado que no se deberia modificar los archivos bajo la carpeta de modules y el archivo funciones.php.
+Si se quiere modificar los textos de por ejemplo agregar partidos, se modifica el frontend.
+Todas las funciones que devuelven tablas, divs o cosas por el estilo, tiene sus variables relacionadas al estilo, para pasarle especificaciones acerca de los id, class, onclick, etc de ellas. VER EL ARCHIVO funciones.php, ahi se listan todas las funciones con una mini explicacion.
+
+bak/* ---» Archivos bakup, al pedo.
+css/* ---» hojas de estilo css
+    facebook/* » estilo css de jquery (con tinte facebook) Creado con la herramienta de jquery theme (file roller, creo)
+    humanity/* » estilo de css de jquery (uno de los que te da para elegir jquery)
+    pes-face.css » Hoja de estilo para facebook de la pagina
+    pes-style.css » vieja hoja de estilo (se usaba en la version de la pagina que no estaba sobre facebook)
+development-bundle/* ---» archivos del jquery
+facebook-platform/* ---» Plataforma php de facebook (es la api vieja, lo que llaman como rest api o old rest api)
+facebox/* ----» algo qe no se uso, pero se tuvo intension de usar, es para tener unos pop-ups estilo los de facebook ( http://chriswanstrath.com/facebox/ )
+graidle/* ---» hace las graficas. El proyecto estaba bueno, pero lo dejaron de desarrollar. Estaba hecho en php4, tuve qe modificarlo para que andara en php5, si no, no mostraba los colores. ( http://graidle.sourceforge.net/ )
+    grafico.php » Simplifica la creacion del grafico, se pasan las variables por get o post y devuelve la imagen del grafico ya hecho. En el archivo se explican las variables necesarias.
+    graidle.php » Libreria graidle
+    graidle_color.ext.php » Informacion de color graidle
+    graidle_* » ejemplos de graidle
+    *.ttf » tipografias
+    gpl.txt » Licencia
+    ChangeLog * » changelog.
+    graidle_DOc(ENG).pdf » Documentacion
+icons/* ---» famfamfam silk icons (son unos iconos qe estan por ahi qe se distribuyen en gpl) ( http://www.famfamfam.com/lab/icons/silk/ )
+js/* ---» archivos javascript. Algunas cosas estan hechas por mi, otras sacadas de internet.
+memcached-1.4.4/* ---» algo qe segun facebook nececitaba para hacer la pagina, pero nunca le encontre el uso ni que hacia, esta al pedo xD.
+modules/* ---» Modulos, todo lo que realmente interactua con la base de datos para: agregar partidos, invitar usuarios, aceptar invitaciones.
+    agregarpartidos.php » Contiene la funcion para agregar partidos
+    borrarjug.php » Contiene la funcion para agregar borrar jugadores (NO IMPLEMENTADO, archivo en blanco)
+    borrarpartidos.php » Contiene la funcion para borrar partidos
+    invite.php » Contiene la funcion para agregar invitaciones
+    invite_accept.php » Contiene la funcion para aceptar invitaciones
+
+
+agregarpartidos.php » Frontend para agregar partidos (importa el modulo, convierte la info del modulo en algo leible) (se envia info por post o get) 
+agregarpartidos_form.php » Form para agregar partidos
+borrarpartidos.php » Frontend para borrar partidos (importa el modulo, convierte la info del modulo en algo leible) (se envia info por post o get)
+config.php » Configuracion basica de la base de datos (conexion), facebook id y secret api, etc..
+crearliga.php » Archivo para crear liga (se envia info por post o get)
+crearliga_form.php » form para crear liga
+favicon.ico » favicon
+feed.php » No me acuerdo que hacia, croe qe era la prueba para hacer que publique en el muro
+funciones.php » todas las funciones que usan los programas
+index.php » Archivo index, es lo que se muestra, reune todo.
+invite.php » Frontend para agregar invitaciones (importa el modulo, convierte la info del modulo en algo leible) (se envia info por post o get) 
+invite_accept.php » Frontend para aceptar invitaciones (importa el modulo, convierte la info del modulo en algo leible) (se envia info por post o get) 
+invite_form.php » form para agregar invitaciones
+invite_see.php » Form que muestra las invitaciones
+liga_admin.php » Pagina para administrar la liga (en el estado de desarrollo qe esta la aplicacion, con administrar se habla de solo poder borrar partidos)
+liga_page.php » Pagina que muestra la informacion de la liga (depende del valor de la variable 'accion' que se le pase por post o get, va a devolver distinta informacion de la liga. Por defecto muestra la lista de los partidos)
+logo1.jpg » Logo de arriba.
+pes.jpg » Mini logo (creo qe no se usa)
+plantilla.php » Una plantilla que se uso en un inicio para diseñar el layout de la pagina
+prueba.php » Archivo que se probaba cualquiercosa, no se para que fue lo ultimo que se uso.
+sdk.php » SDK api (php), se intento implementar, pero por falta de ganas no se hizo.
+Tablas_SQL.sql » Descripcion de las tablas que se usan en la base de datos. Las primeras 2 es nececsario crearlas a mano, las segundas dos, especificas de cada liga, las creara la aplicacion cuando se cree una liga.
+xd_receiver.htm » xd_receiver, se usaba para la api vieja de javascript de facebook. No se si se hizo el paso completo de la vieja api a la nueva. Creo que hay una mezcla y se dejo ahi por falta de ganas.
+
+####################### Como instalar #######################
+* Copiar todos los archivos a un server php (requiere php5 y bases de datos myql)
+* Crear la base de datos, y las tablas necesarias (las instrucciones sql estan en Tablas_SQL.sql )
+* Crear la aplicacion en facebook y hacer la configuracion necesaria ahi.
+* Configurar config.php (entrar al archivo que explica que info se nececita poner)
+

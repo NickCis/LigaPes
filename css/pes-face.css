@@ -1,0 +1,302 @@
+
+* {
+	margin: 0px ; 
+	border: 0px ; 
+	padding: 0px; 
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;
+	font-size: 11px;
+	color: #333333;
+}
+
+body {
+	width: 740px;
+}
+
+a {
+	color: #3b5998;
+	outline-style: none;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: bold;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/*Jquery set up*/
+/*
+.ui-icon { width: 16px; height: 16px;  }
+.ui-icon-closethick { background-image: url(../icons/cancel.png); }
+*/
+/*Dialog *//*
+.ui-dialog { float: left; border: 1px solid #cccccc; position: relative; padding: .2em; width: 500px; height: 400px; background-color: #ffffff; }
+.ui-dialog .ui-dialog-titlebar { float: left; border: 1px solid #cccccc; width: 483px; padding: .5em .3em .3em 1em; position: relative; background-color: #6d84b4; height: 28px}
+.ui-dialog .ui-dialog-title { position: absolute; left:.3em; margin: .2em 0 .2em; font-size: 14px;} 
+.ui-dialog .ui-dialog-titlebar-close { position: absolute; right: .3em; top: 50%; width: 19px; margin: -10px 0 0 0; padding: 1px; height: 18px; }
+.ui-dialog .ui-dialog-titlebar-close span {  display: block; margin: 1px; }
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus { padding: 0; }
+.ui-dialog .ui-dialog-content { background: none; padding: 10px;}
+.ui-dialog .ui-dialog-buttonpane { text-align: left; border-width: 1px 0 0 0; background-image: none; margin: .5em 0 0 0; padding: .3em 1em .5em .4em; }
+.ui-dialog .ui-dialog-buttonpane button { float: right; margin: .5em .4em .5em 0; cursor: pointer; padding: .2em .6em .3em .6em; line-height: 1.4em; width:auto; overflow:visible; }
+.ui-dialog .ui-resizable-se { width: 14px; height: 14px; right: 3px; bottom: 3px; }
+.ui-draggable .ui-dialog-titlebar { cursor: move; }*/
+/*------------*//*
+.ui-state-active { 
+	background-color: #d8dfea ;
+}*/
+
+/* Facebook Box Styles */
+.fbgreybox {
+	background-color: #f7f7f7;
+	border: 1px solid #cccccc;
+	color: #333333;
+	padding: 10px;
+	font-size: 13px;
+	font-weight: bold;
+}
+.fbbluebox {
+	background-color: #eceff6;
+	border: 1px solid #d4dae8;
+	color: #333333;
+	padding: 10px;
+	font-size: 13px;
+	font-weight: bold;
+}
+.fbinfobox {
+	background-color: #fff9d7;
+	border: 1px solid #e2c822;
+	color: #333333;
+	padding: 10px;
+	font-size: 13px;
+	font-weight: bold;
+}
+.fberrorbox {
+	background-color: #ffebe8;
+	border: 1px solid #dd3c10;
+	color: #333333;
+	padding: 10px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.fbcontentdivider {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 520px;
+	height: 1px;
+	background-color: #d8dfea;
+}
+/* Agregados */
+.fbmenu {
+	float: right; 
+	width:75% ;
+	padding-left: 25% ;
+	padding-top: 10px;
+	background-color: #edeff4;
+	border-bottom: 1px solid #d4dae8;
+	border-right: 1px solid #d4dae8;
+	border-left: 1px solid #d4dae8;	
+}
+
+.fbmenuizq { 
+	padding-top: 10px;
+	border-right: 1px solid #d4dae8;
+	width: 24%;  
+	float: left; 
+	height: 100% ;
+}
+.fbmenuizq h3 a {
+	font-weight: bold;	
+	padding-left: 4px ;
+	color: #333333 ;
+	display: block ;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+/*.fbmenuizq h3 a:hover {
+	background-color: #eff2f7;
+	text-decoration: none;
+}*/
+.fbmenuizq h3 a img {
+	margin-right: 4px;
+}
+/*
+.fbmenuizqin {
+	margin-left: 10px;
+}*/
+.fbmenuizqin ul { 
+	list-style:none; 
+}
+.fbmenuizqin ul li a {
+	font-weight: bold;	
+	padding-left: 4px ;
+	color: #333333 ;
+	display: block ;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.fbmenuizqin ul li a:hover {
+	background-color: #eff2f7;
+	text-decoration: none;
+}
+.fbmenuizqin ul li a img {
+	margin-right: 4px;
+}
+
+.fbcontdiv {
+	width: 100%;
+	height: 1px;
+	background-color: #d4dae8 ;
+}
+
+.fbdivacordh3 {
+	border-top: 1px solid #d4dae8 ;
+}
+
+.fbbodyder {
+	width: 74%;
+	float: right;
+}
+
+.fbbodyderfbfecha {
+	overflow: hidden;
+	height: 1.5em;
+	display: block;
+}
+
+.fbbodyderul {
+	list-style: url(icons/sport_soccer.png) circle inside;
+}
+
+.menuligasul { 
+	list-style:none; 
+}
+.menuligasul li a {
+	font-weight: bold;	
+	padding-left: 4px ;
+	color: #333333 ;
+	display: block ;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.menuligasul li a:hover {
+	background-color: #eff2f7;
+	text-decoration: none;
+}
+.menuligasul li a img {
+	margin-right: 4px;
+}
+/* Facebook Tab Style */
+.fbtab {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	background-color: #d8dfea;
+	color: #3b5998;
+	font-weight: bold;
+	float: left;
+	margin-right: 4px;
+	text-decoration: none;
+}
+.fbtab:hover {
+	background-color: #3b5998;
+	color: #ffffff;
+	cursor: hand;
+}
+
+.htrestitle {
+	font-size: 18px;
+}
+
+.htrestitle a {
+	font-size: 18px;
+}
+
+/* Auto Complete Form */
+.aformre {
+	height: 15px ;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+.aformre div {
+	background-color: #eceff6;
+	border: 1px solid #d4dae8;
+	color: #333333;
+	padding: 3px;
+	font-size: 11px;
+	font-weight: bold;
+	display: inline;
+
+}
+/*.aformre div img { 
+	margin-right: 1em;
+	height: 24px;
+	width: 24px;	
+}*/
+.aformre div a { 
+	color: #dd3c10
+}
+
+.ui-autocomplete li a { 
+	display: block;
+}
+.ui-autocomplete li a img { 
+	height: 24px;
+	width: 24px;	
+}
+/* --------------------------*/
+
+#todo { 
+	margin-left: 1%; 
+	margin-right: 1%; 
+}
+
+#header { 
+	width: 100% ; 
+	background: #3b5998  ;
+}
+
+#menu ul{ 
+	list-style:none; 
+	height: 2ex;
+}
+#menu ul li{ 
+	float: right;
+	margin-top: 0.5ex;
+	height: 3ex;
+	margin-right: 1.5em
+}
+#menu ul li a { 
+	display: block;
+	font-weight: bold;
+	color: white;
+	background: #e67817;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	border-bottom: 0.2em solid #cdc3b7;
+	border-left: 0.2em solid #cdc3b7;
+}
+#menu ul li a:hover {
+	background: #c26513;
+	border-bottom: 0;
+	border-left: 0;
+	border-top: 0.2em solid #cdc3b7;
+	border-right: 0.2em solid #cdc3b7;
+}
+
+#tablacuadricula { 
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0; 
+}
+#tablacuadricula li { 
+	margin: 3px 3px 3px 0; 
+	padding: 1px; 
+	float: left; 
+	width: 45%; 
+	height: 150px; 
+	font-size: 4em; 
+	text-align: center; 
+}
+
